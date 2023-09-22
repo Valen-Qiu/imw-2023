@@ -1,12 +1,427 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    <title>Index</title>
+    <title>Ex2-1</title>
+    <style>
+        body{
+            background: rgb(255, 255, 255);
+        }
+        .painting-1 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(15,1fr);
+        }
+        .red{
+            background: #BE3030;
+        }
+        .blue{
+            background: #4F89B2;
+        }
+        .yellow{
+            background: #DDB834;
+        }
+        .cream{
+            background: #F1F1F1;
+        }
+        .border-right{
+            border-right: 15px solid #434343;
+        }
+        .border-top{
+            border-top: 15px solid #434343;
+        }
+
+        .section-1 {
+            grid-column: 1 / 4;
+            grid-row: 1 / 5;
+        }
+        .section-2 {
+            grid-column: 1 / 4;
+            grid-row: 5 / 12;
+        }
+        .section-3 {
+            grid-column: 1 / 4;
+            grid-row: 12 / 16;
+        }
+        .section-4 {
+            grid-column: 4 / 16;
+            grid-row: 1 / 12;
+        }
+        .section-5 {
+            grid-column: 4 / 15;
+            grid-row: 12 / 16;
+        }
+        .section-6 {
+            grid-column: 15 / 16;
+            grid-row: 12 / 14;
+        }
+        .section-7 {
+            grid-column: 15 / 16;
+            grid-row: 14 / 16;
+        }
+
+
+        .painting-2 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(15,1fr);
+        }
+        .bright-blue{
+            background: #041FB4;
+        }
+        .bright-yellow{
+            background: #F6FAE1;
+        }
+        .white{
+            background: #BFD1D1;
+        }
+        
+        .section-8 {
+            grid-column: 1 / 4;
+            grid-row: 1 / 16;
+        }
+        .section-9 {
+            grid-column: 4 / 9;
+            grid-row: 1 / 11;
+        }
+        .section-10 {
+            grid-column: 4 / 9;
+            grid-row: 11 / 16;
+        }
+        .section-11 {
+            grid-column: 9 / 16;
+            grid-row: 1 / 5;
+        }
+        .section-12 {
+            grid-column: 9 / 13;
+            grid-row: 5 / 11;
+        }
+        .section-13 {
+            grid-column: 9 / 13;
+            grid-row: 11 / 16;
+        }
+        .section-14 {
+            grid-column: 13 / 16;
+            grid-row: 5 / 16;
+        }
+        
+
+        .painting-3 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(15,1fr);
+        }
+        .cheese-yellow{
+            background: #FFEB00;
+        }
+        .cheese-orange{
+            background: #FF7300;
+        }
+        .cheese-black{
+            background: black;
+        }
+        .cheese-white{
+            background: white;
+        }
+
+    
+        
+    </style>
 </head>
 
 <body>
-    <h1>Ex2 - 1</h1>
-    <a href="index.html">Back</a>
+   <h1>Exersice2</h1>
+   <h4>Ex2-1</h4>
+
+<div class="painting-1">
+    <div class="cream section-1 border-right"></div>
+    <div class="cream section-2 border-top border-right"></div>
+    <div class="blue section-3 border-right border-top"></div>
+    <div class="red section-4"></div>
+    <div class="cream section-5 border-right border-top"></div>
+    <div class="cream section-6 border-top"></div>
+    <div class="yellow section-7 border-top"></div>
+</div>
+
+   <h4>Ex2-2</h4>
+
+<div class="painting-2">
+    <div class="white section-8 border-right"></div>
+    <div class="bright-yellow section-9 border-right"></div>
+    <div class="yellow section-10 border-right border-top"></div>
+    <div class="bright-blue section-11"></div>
+    <div class="white section-12 border-right border-top"></div>
+    <div class="white section-13 border-top border-right"></div>
+    <div class="bright-yellow section-14 border-top"></div>
+</div>
+
+    <h4>Ex2-3</h4>
+<div class="painting-3">
+     <!-- Row 1 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 2 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 3 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 4 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 5 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 6 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-orange"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 7 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 8 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 9 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+
+      <!-- Row 10 -->
+      <div class="cheese-white"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-orange"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-white"></div>
+
+       <!-- Row 11 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+
+      <!-- Row 12 -->
+      <div class="cheese-white"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-orange"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-yellow"></div>
+      <div class="cheese-black"></div>
+      <div class="cheese-white"></div>
+
+      <!-- Row 13 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-yellow"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 14 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-black"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+     <!-- Row 15 -->
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+     <div class="cheese-white"></div>
+
+
+
+</div>
+
+
 </body>
+
 </html>
