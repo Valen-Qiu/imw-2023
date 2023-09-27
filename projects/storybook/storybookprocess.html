@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Storybook Process </title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * {
+            /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 100px;
+            /* Add spacing around the entire page */
+            font-size: 12px;
+            /* Setting baseline font size */
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+
+        figcaption {
+            font-size: 1.25em;
+        }
+
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2,
+        p,
+        figure,
+        figcaption {
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        .process-template {
+            width: 40%;
+            /* Set the width of the template to 60% of the viewport. */
+            margin: auto;
+            /* Center align the template by adding auto margins to the left and right */
+        }
+
+        .title {
+            margin-bottom: 100px;
+            /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+
+            .process-template {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="process">
+
+        <div class="title">
+            <h1>Stroybook Process</h1>
+            <p>1 Week - Solo Work</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>1 - Research & Ideation</h2>
+                <p>
+                    I do not have any coding experience. My primary goal was to acquaint myself with HTML and CSS while
+                    exploring various methods of illustrating images. Initially, I scoured numerous three-page comic
+                    stories as potential project ideas. However, I soon realized that these stories demanded extensive
+                    graphic design skills and intricate scripting. Therefore, I pivoted from traditional storytelling to
+                    a more interactive approach, where I would depict processes such as crafting sushi, tidying a room,
+                    or nurturing a tree. Users could actively engage with these narratives by clicking buttons.
+                    Ultimately, I settled on the theme of "Creating Onigiri," akin to a classic restaurant management
+                    game, offers users the freedom to make flexible choices and interact throughout the experience.
+                </p>
+                <p>
+                    Due to the project's specific requirements and limited timeframe, I was unable to demonstrate
+                    complex
+                    graphic effects in HTML and CSS. Consequently, I searched for simple illustrations as references to
+                    enhance my approach to depicting various items, including foods and background. This approach helped
+                    me brainstorm more effective ways to represent elements by using geometric shapes.
+                </p>
+                <figure>
+                    <img src="img/research-reference.png" alt="research-reference" width="100%">
+                    <figcaption>From:Pinterest</figcaption>
+                </figure>
+            </div>
+
+            <div class="section">
+                <h2>2 - Low-fi & Test</h2>
+                <p>
+                    I employed a low-fi approach to define the elements on each page and determine the overall story's
+                    length. Initially, I attempted to gamify the storybook by including instructions on how to play on
+                    the homepage. However, I quickly recognized that this "game" was overly simplistic, and users could
+                    have a fulfilling experience without requiring an onboarding process.
+                </p>
+                <figure>
+                    <img src="img/low-fi.png" alt="low-fi" width="100%">
+                </figure>
+
+                <p>
+                    Additionally, I designed a collection of UI elements and food graphics to assist me in achieving a
+                    more polished, high-fi representation of the project.
+                </p>
+                <figure>
+                    <img src="img/ui.png" alt="ui" width="100%">
+                </figure>
+            </div>
+
+            <div class="section">
+                <h2>3 - Hi-fi & Test</h2>
+                <p>
+                    During the high-fidelity design phase, I adjusted the positioning, color, and sizing of elements to
+                    create a visually pleasing and comfortable page layout. However, when I prototyped the user flow, I
+                    realized that the flexible combination of four foods could potentially result in dozens of results.
+                    I could not achieve this easily through HTML and CSS. Therefore, I made adjustments to the page
+                    layout and user flow, transitioning from the selection of multiple foods to a simplified approach of
+                    asking users, "Do you want to choose this food?"
+                </p>
+                <figure>
+                    <img src="img/hi-fi test.png" alt="high-fi test" width="100%">
+                </figure>
+                <figure>
+                    <img src="img/user flow.jpg" alt="user flow" width="100%">
+                </figure>
+                <p>
+                    After testing the prototype in Figma, I found that the storybook lacked some "surprise". Therefore,
+                    I made adjustments to the final page. In the event that the user selects all the foods, it will
+                    result in a failure, and prompt the user to restart the storybook. This addition aims to introduce
+                    an element of challenge and unpredictability, enhancing the overall engagement of users.
+                </p>
+                <figure>
+                    <img src="img/improve.png" alt="improve" width="100%">
+                </figure>
+            </div>
+            <div class="section">
+                <h2>4 - Coding</h2>
+                <p>
+                    I expanded my understanding of HTML and CSS by watching numerous YouTube video tutorials. These
+                    tutorials provided me with valuable insights, especially when dealing with complex graphics.
+                    However, some design details had to be modified due to implementation constraints within the code.
+                    Moreover, a significant portion of my time was devoted to ensuring that each element within the
+                    storybook could seamlessly adapt to page changes. This responsive design approach aimed to enhance
+                    the overall user experience and maintain consistency throughout the project.
+                </p>
+            </div>
+            <div class="section">
+                <h2>5 - Reflection</h2>
+                <p>
+                    In just three days, I went from knowing nothing to completing this project. While there are still
+                    many details that could be improved, I take immense pride in what I've achieved. This project has
+                    been a tremendous learning experience, and I've gained two invaluable takeaways from it.
+                </p>
+                <p>1. Describe what I want in one sentence</p>
+                <p>
+                    When I search for tutorials, I sometimes struggle to articulate precisely the effect I'm trying to
+                    achieve, which can lead to spending extra time searching for the right solution. However, this
+                    experience has underscored the vital role of clear communication, especially when working with
+                    engineers as a UI/UX designer in the future. Being able to express my design intentions and
+                    requirements accurately will undoubtedly be a valuable skill to facilitate collaboration and
+                    streamline the development process.
+                </p>
+                <p>2. Plan and modularize before code</p>
+                <p>In coding, achieving the same result can often be accomplished through various methods. I attempted
+                    to simplify my coding process, but I the desired effect was not achieved optimally. Consequently,
+                    upon reviewing my code, you may notice that it lacks cleanliness. However, this experience has
+                    reinforced me to plan before coding to reduce development time in the future.
+                </p>
+            </div>
+
+
+
+
+        </div>
+        <!-- End of content -->
+    </div>
+</body>
+
+</html>
