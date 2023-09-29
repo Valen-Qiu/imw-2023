@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F5D4EE;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    width: 700px;
+    height: 103px;
+    background: white;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+.site title{
+    font-size: 38px;
+}
+
+.nav-links{
+    
+}
