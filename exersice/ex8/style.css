@@ -1,0 +1,19 @@
+body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokemon {
+    background: white;
+    min-width: 100px;
+    text-align: center;
+    padding: 25px;
+}
+
+.pokemon.name {
+    text-transform: capitalize;
+    font-weight: bold;
+}
