@@ -43,6 +43,15 @@ header {
     background-color: #2C2C2C;
 }
 
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    background-color: #2C2C2C;
+}
+
 .site-title {
     font-size: 24px;
     font-family: "gabriella", sans-serif;
@@ -50,12 +59,16 @@ header {
     font-style: normal;
 }
 
-.nav-links-h {
+.nav-links {
     font-size: 20px;
     padding: 0 30px;
     font-family: "obvia", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+.nav-links:hover {
+    color: #EB00FF;
 }
 
 ul {
@@ -78,6 +91,7 @@ ul li {
     padding: 40vh 0;
 }
 
+/*case work elements*/
 .casework {
     height: 30vh;
     background-color: black;
@@ -114,6 +128,7 @@ ul li {
     justify-content: center;
 }
 
+/*case work effect*/
 .container:hover .box {
     filter: grayscale(1) brightness(0.3);
 }
@@ -145,25 +160,197 @@ ul li {
     font-style: normal;
 }
 
-.learn {
+/*background color move*/
+:root {
+    --colorblue: 18, 113, 255;
+    --colorlightblue: 18, 255, 255;
+    --colorgreen: 37, 220, 18;
+    --colorred: 200, 50, 50;
+    --coloryellow: 180, 180, 50;
+    --color-mouse: 235, 0, 255;
+    --circle-size: 70%;
+    --blending: hard-light;
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+
+    50% {
+        transform: translateX(50%) translateY(10%);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+}
+
+.gradient-bg {
+    width: 100vw;
     height: 100vh;
-    background-color: black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: black;
+    top: 0;
+    left: 0;
+}
+
+.gradient-bg svg {
+    display: none;
+}
+
+.gradient-bg .gradients-container {
+    filter: url(#goo);
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-bg .g1 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--colorblue), 0.8) 0, rgba(var(--colorblue), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+    opacity: 1;
+}
+
+.gradient-bg .g2 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--colorlightblue), 0.8) 0, rgba(var(--colorlightblue), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 1;
+}
+
+.gradient-bg .g3 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--colorred), 0.8) 0, rgba(var(--colorred), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+    opacity: 1;
+}
+
+.gradient-bg .g4 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--colorgreen), 0.8) 0, rgba(var(--colorgreen), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+    opacity: 0.7;
+}
+
+.gradient-bg .g5 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--coloryellow), 0.8) 0, rgba(var(--coloryellow), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: calc(var(--circle-size) * 2);
+    height: calc(var(--circle-size) * 2);
+    top: calc(50% - var(--circle-size));
+    left: calc(50% - var(--circle-size));
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+    opacity: 1;
+}
+
+.gradient-bg .interactive {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-mouse), 0.8) 0, rgba(var(--color-mouse), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    opacity: 0.7;
+}
+
+.text-container {
+    height: 100vh;
+    position: absolute;
     display: flex;
-    padding: 40vh 0;
-    text-align: center;
+    z-index: 2;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 40vh 20vw;
 }
 
 .button {
-    width: 20px;
-    height: 10px;
+    position: absolute;
     display: flex;
+    top: 70vh;
+    width: 12vw;
+    height: 8vh;
     color: white;
-    background-color: #EB00FF;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    font-family: "obvia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    transition: background-color 0.8s, border-color 0.8s;
 }
 
+.button:hover {
+    color: white;
+    background-color: #EB00FF;
+    border-color: #EB00FF;
+}
+
+
+
+/*mouse effect*/
 .mouse {
     position: absolute;
     color: white;

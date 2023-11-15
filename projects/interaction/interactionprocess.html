@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Interaction Process </title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * {
+            /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 100px;
+            /* Add spacing around the entire page */
+            font-size: 12px;
+            /* Setting baseline font size */
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+
+        figcaption {
+            font-size: 1.25em;
+        }
+
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2,
+        p,
+        figure,
+        figcaption {
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        .process-template {
+            width: 40%;
+            /* Set the width of the template to 60% of the viewport. */
+            margin: auto;
+            /* Center align the template by adding auto margins to the left and right */
+        }
+
+        .title {
+            margin-bottom: 100px;
+            /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+
+            .process-template {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="process">
+
+        <div class="title">
+            <h1>Interaction Process</h1>
+            <p>5 Week - Solo Work</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>1 - Research</h2>
+                <p>
+                    "What comes after the environment?" is a lecture held in the school. I started looking for various
+                    designs and formats because of the nature of this occasion. The primary objective of this poster was
+                    to convey essential details about the lecture and pique the audience's interest.
+                </p>
+                <figure>
+                    <img src="img/research.png" alt="research-reference" width="100%">
+                    <figcaption>From:Pinterest</figcaption>
+                </figure>
+                <p>
+                    As I delved into my research online, I gained a more profound insight into the event, prompting me
+                    to refine the information. Crafting the information hierarchy proved to be a challenging aspect of
+                    poster design.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>2 - Prototype & Test</h2>
+                <p>
+                    Considering that this is a page design, it may be presented on both the web and mobile phones. I
+                    decided to try both vertical and horizontal layouts.
+                </p>
+                <p>
+                    For the theme color of the poster, I chose several hues associated with the "environment" to create
+                    a cohesive visual identity. To convey varying levels of information effectively, I employed a
+                    combination of text sizes, weights, and styles.
+                </p>
+                <figure>
+                    <img src="img/prototype2.png" alt="low-fi" width="100%">
+                </figure>
+                <p>
+                    I checked the final product on my phone and PC after finishing the first draft. Based on comments
+                    from various friends regarding the difficulties in finding information, the layout was further
+                    modified.
+                </p>
+                <figure>
+                    <img src="img/prototype1.png" alt="ui" width="100%">
+                </figure>
+            </div>
+
+            <div class="section">
+                <h2>3 - Coding & Animation</h2>
+                <p>
+                    I separated the poster into pieces first using the technique taught in class. In contrast to the
+                    static poster, I began to consider which elements could benefit from animation to increase
+                    interaction and attention. I'm trying to add inconspicuous animation effects to the title and some
+                    graphics in order to show the theme "after" through animation.
+                </p>
+                <figure>
+                    <img src="img/coding.jpg" alt="high-fi test" width="100%">
+                </figure>
+
+            </div>
+            <div class="section">
+                <h2>4 - Reflection</h2>
+                <p>
+                    In this project, I found that I could easily utilize HTML and CSS to accomplish the design. One of
+                    the key challenges I encountered was selecting the most fitting animation effects to ensure that the
+                    visually appealing motion design enhances the overall design's effectiveness. This will undoubtedly
+                    be a path I'll continue to explore in future projects..
+                </p>
+
+            </div>
+        </div>
+        <!-- End of content -->
+    </div>
+</body>
+
+</html>
