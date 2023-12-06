@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     color: white;
-    cursor: none;
 }
 
 @font-face {
@@ -14,6 +13,10 @@
         url('font/Bespoke-4QjqRUPDSU.woff') format('woff'),
         url('font/Bespoke-4QjqRUPDSU.ttf') format('truetype'),
         url('font/Bespoke-4QjqRUPDSU.svg#Bespoke-4QjqRUPDSU') format('svg');
+}
+
+body {
+    cursor: none;
 }
 
 /*header section*/
@@ -179,7 +182,7 @@ body {
     margin: 0.5em 0;
     line-height: 1em;
     color: #FF395D;
-    text-align: left;
+    text-align: center;
 }
 
 .card h4 {
@@ -187,7 +190,7 @@ body {
     font-weight: 700;
     font-style: normal;
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     margin-top: 2em;
 }
 
@@ -196,7 +199,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
 }
 
 .outline {
@@ -204,10 +207,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 40px);
-    width: 101%;
-    height: 100%;
+    width: 102%;
+    height: 105%;
     border: 2px solid white;
     border-radius: 2em;
+    pointer-events: none;
 }
 
 /*button section*/
@@ -300,11 +304,6 @@ body {
         position: relative;
     }
 
-    .card.left,
-    .card.right {
-        margin-top: 0;
-    }
-
     .card h2 {
         font-size: 1.5em;
         margin: 1em 0;
@@ -320,8 +319,8 @@ body {
 
     .outline {
         transform: translate3d(-50%, -50%, 20px);
-        width: 110%;
-        height: 100%;
+        width: 105%;
+        height: 105%;
     }
 
     #back {
