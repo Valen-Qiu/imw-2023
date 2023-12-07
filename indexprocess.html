@@ -101,104 +101,65 @@
 
         <div class="content">
             <div class="section">
-                <h2>1 - Research</h2>
+                <h2>1 - Research & Brainstorm</h2>
                 <p>
-                    The word I was assigned was “hover,” a commonly employed technique in web design known for its
-                    ability to boost user engagement. I started with gather various manifestations of hover, such as
-                    contextual hover cards, adaptive contextual menus, dynamic visual feedback, and gamified
-                    interactions.
+                    I aimed to explore more creative and engaging interactive approaches. After in-depth research on
+                    various websites and exploring a series of interesting JavaScript libraries, I ultimately decided to
+                    make cards the central theme of the index project. Cards not only possess unique randomness and
+                    diversity but also offer users a novel and engaging experience. The choice of this theme is intended
+                    to break the boundaries of traditional design, providing users with a more unique and enjoyable
+                    visual experience.
                 </p>
                 <p>
-                    The incorporation of hover in these interactive websites generates distinctive visual effects and
-                    user experiences, serving as a rich source of inspiration for me.
-                </p>
-                <p>
-                    - https://vos9x.com/
-                </p>
-                <p>
-                    - https://www.truestaging.co.uk/
-                </p>
-                <p>
-                    - https://getreadywithmusic.byspotify.com/en
-                </p>
-                <p>
-                    - https://monopo.london/
-                </p>
+                    Initially, I experimented with designing different styles of pages to achieve more creative
+                    expression, such as a hand-drawn sketchbook style and a scrolling effect gallery. However, through
+                    extensive discussions with Peter, I gradually realized the critical importance of maintaining page
+                    consistency for the overall user experience. Consequently, I adjusted the design direction, focusing
+                    on the card theme to ensure overall design consistency and coherence.
             </div>
 
             <div class="section">
-                <h2>2 - Brainstorm & Prototype1</h2>
+                <h2>2 - Prototype1</h2>
                 <p>
-                    The central concept behind "Hover" is that the page undergoes visual changes when the mouse is in
-                    motion. I aim to develop an interactive website for my design studio with this feature.
-                </p>
-                <p>
-                    Having conceived the foundational elements of the page, I delineated the typography and information
-                    hierarchy using a low-fidelity approach. Informed by research, I contemplated which elements could
-                    effectively convey information through hover interactions.
-                </p>
-                <figure>
-                    <img src="img/Prototype1.png" alt="low-fi" width="100%">
-                </figure>
-                <p>
-                    The first involves a clickable button, undergoing variations like color changes or underlining.
-                    The second pertains to the initial interface upon entering the webpage. I aspire to imprint the idea
-                    of "design for well-being and the future" on users. Consequently, I experimented with different
-                    effects on the main image, incorporating elements such as "focus" and "parallax." Additionally, for
-                    showcasing case studies, I explored various methods gleaned from YouTube tutorials, including
-                    elaborate picture animation effects during hovering and loading effects for information. However, in
-                    order to maintain the overall simplicity of the webpage and optimize the visual impact of the
-                    images, I ultimately opted for the current approach involving changes in brightness and size.
+                    Due to my limited experience in web design, I referred to the layout of some HTML and CSS templates.
+                    The overall design style was determined through wireframes. However, during the actual coding
+                    process, I encountered a new challenge due to the varying content and information on each card. To
+                    overcome this obstacle, I made multiple adjustments, reorganizing the layout of the cards.
+                    Especially concerning the browsing experience on mobile devices, I decided to adopt a strategy of
+                    displaying only one column of cards to ensure responsiveness and user-friendliness, allowing users
+                    to comfortably browse content on different devices.
                 </p>
                 <figure>
-                    <img src="img/prototype2.png" alt="high-fi" width="100%">
+                    <img src="img/process/lowfi.png" alt="low-fi" width="100%">
                 </figure>
             </div>
 
             <div class="section">
-                <h2>3 - Improvement & Prototype2</h2>
+                <h2>3 - Prototype2 & Coding</h2>
                 <p>
-                    Following a more in-depth conversation with Peter, I discovered that the primary emphasis of this
-                    project lies not in the presentation of information on the website but in infusing interactive
-                    elements with a playful, game-like nature. Consequently, I embarked on a reconsideration of how to
-                    incorporate engaging hover effects into a display-oriented website and strike a harmonious balance
-                    between visual aesthetics, information, and interactivity
-                </p>
-                <p>
-                    I gave up adding too many animation interactive elements at the beginning of the page because I
-                    wanted the user’s attention to remain on the portfolio and the website itself. I decided to add a
-                    fun background animation interaction at the end.
-                </p>
-                <p>
-                    Utilizing my knowledge of visual effects in p5.js, I experimented with effects such as "flow field,"
-                    "star-shutting sky," and a "particle system"
+                    To ensure coordination between interactive elements and image elements, I extensively used Figma for
+                    design and created a series of futuristic icons. Considering the holistic user experience,
+                    particularly when each page contains a substantial amount of information, I introduced key
+                    interactive design elements. In the bottom right corner of the page, I added a "back to top"
+                    function for users to quickly return to the beginning of the page. Additionally, to ensure users
+                    could easily access the navigation menu at any time, I fixed the menu bar at the top of the page,
+                    enabling users to navigate to different sections effortlessly. These design decisions aim to enhance
+                    the smoothness and convenience of the user experience, making the overall interaction more natural
+                    and intuitive.
                 </p>
                 <figure>
-                    <img src="img/Visual example.png" alt="interactive example" width="100%">
+                    <img src="img/process/ui.png" alt="UI" width="100%">
                 </figure>
                 <p>
-                    However, these visual presentations seemed incongruent with the overall theme of the website,
-                    appearing overly intricate. Subsequently, I reevaluated my approach and employed animated color
-                    changes. This not only facilitated seamless visual transitions but also introduced an element of
-                    playfulness for users
-                </p>
-                <figure>
-                    <img src="img/Final effect.jpg" alt="final effect" width="100%">
-                </figure>
-
-            </div>
-            <div class="section">
-                <h2>4 - Coding</h2>
-                <p>
-                    I referred to many tutorials. Initially, I focused on resolving the visual effects associated with
-                    color blur and fusion. Subsequently, I delved into the creation of original animations. The
-                    iterative process involved fine-tuning numerous parameters until a satisfying effect emerged.
+                    At the project's inception, I considered using three.js to build a 3D visual effect website.
+                    However, due to time constraints, I abandoned this idea. Instead, I discovered the Tilt JS library,
+                    which allowed me to create a 3D visual effect in the simplest way possible. Therefore, I decided to
+                    add this effect to each card.
                 </p>
                 <p>
-                    The evolution of the mouse's behavior prompted me to contemplate incorporating an engaging animated
-                    rotation for the cursor in other information areas. This change not only introduced an element of
-                    whimsy but also provided an opportunity to refine the hover effect of the buttons, further enhancing
-                    the overall interactive experience.
+                    Additionally, in project3, I experimented with an animated background. I believe this is a
+                    non-intrusive interactive approach that provides users with some freedom to interact. For the
+                    background, I used effects from the tsParticles library, adding a style suitable for web pages.
                 </p>
             </div>
         </div>
